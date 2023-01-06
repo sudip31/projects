@@ -13,18 +13,33 @@
     <div class="form">
       <h1>LOG IN</h1>
       <p>First name :</p>
-      <input type="text" name="" placeholder="Name Here" />
+      <input type="text" name="" placeholder="Write your first name " />
 
       <p>Last name :</p>
-      <input type="text" name="" placeholder="Name Here" />
+      <input type="text" name="" placeholder="Write your Last Name" />
 
-      <p>Email</p>
-      <input type="email" name="" placeholder="Write your Email" />
+      <div>
+        <p>Email</p>
+        <input id="email" type="email" name="" placeholder="Write your Email" />
+      </div>
+      <div id="set">
+        <p>Password :</p>
+        <input
+          type="password"
+          name=""
+          placeholder="Enter a strong Password"
+          id="pass"
+          oninput="check()"
+        />
 
-      <p>Password :</p>
-      <input type="password" name="" placeholder="Password Here" id="pass" />
+        <br />
+        <i id="see" onclick="see()" class="far fa-eye"></i>
+      </div>
+      <div id="check">
+        <input type="checkbox" onclick="myfunction()" />
+      </div>
       <!-- <input type="checkbox" onclick="myfunction()" /> -->
-
+      <i id="ch" class="fa fa-check-circle"></i>
       <input type="submit" name="" value="LOGIN" onclick="validate()" />
     </div>
 
